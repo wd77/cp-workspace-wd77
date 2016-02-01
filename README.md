@@ -1,9 +1,9 @@
-# com-chilipeppr-workspace-sample
-A ChiliPeppr Workspace sample.
+# de-wd77-cp-workspace-wd77
+The  WD77 lean Workspace, optimized for smaller screens.
 
 ![alt text](screenshot.png "Screenshot")
 
-## ChiliPeppr Workspace / Sample
+## ChiliPeppr WD77 Workspace
 
 All ChiliPeppr workspaces/widgets/elements are defined using cpdefine() which is a method
 that mimics require.js. Each defined object must have a unique ID so it does
@@ -11,13 +11,13 @@ not conflict with other ChiliPeppr objects.
 
 | Item                  | Value           |
 | -------------         | ------------- | 
-| ID                    | com-chilipeppr-workspace-sample |
-| Name                  | Workspace / Sample |
-| Description           | A ChiliPeppr Workspace sample. |
-| chilipeppr.load() URL | http://raw.githubusercontent.com/chilipeppr/workspace-sample/master/auto-generated-workspace.html |
-| Edit URL              | http://ide.c9.io/chilipeppr/workspace-sample |
-| Github URL            | http://github.com/chilipeppr/workspace-sample |
-| Test URL              | https://preview.c9users.io/chilipeppr/workspace-sample/workspace.html |
+| ID                    | de-wd77-cp-workspace-wd77 |
+| Name                  | WD77 Workspace |
+| Description           | The  WD77 lean Workspace, optimized for smaller screens. |
+| chilipeppr.load() URL | http://raw.githubusercontent.com/wd77/cp-workspace-wd77/master/auto-generated-workspace.html |
+| Edit URL              | http://ide.c9.io/wd77/cp-workspace-wd77 |
+| Github URL            | http://github.com/wd77/cp-workspace-wd77 |
+| Test URL              | https://preview.c9users.io/wd77/cp-workspace-wd77/workspace.html |
 
 ## Example Code for chilipeppr.load() Statement
 
@@ -34,16 +34,16 @@ back the instance of it to init() it.
 // this workspace should be loaded into.
 chilipeppr.load(
   "#pnlWorkspace",
-  "http://raw.githubusercontent.com/chilipeppr/workspace-sample/master/auto-generated-workspace.html",
+  "http://raw.githubusercontent.com/wd77/cp-workspace-wd77/master/auto-generated-workspace.html",
   function() {
     // Callback after workspace loaded into #pnlWorkspace
     // Now use require.js to get reference to instantiated workspace
     cprequire(
-      ["inline:com-chilipeppr-workspace-sample"], // the id you gave your workspace
-      function(myWorkspaceSample) {
+      ["inline:de-wd77-cp-workspace-wd77"], // the id you gave your workspace
+      function(myDeWd77CpWorkspaceWd77) {
         // Callback that is passed reference to the newly loaded workspace
-        console.log("Workspace / Sample just got loaded.", myWorkspaceSample);
-        myWorkspaceSample.init();
+        console.log("WD77 Workspace just got loaded.", myDeWd77CpWorkspaceWd77);
+        myDeWd77CpWorkspaceWd77.init();
       }
     );
   }
@@ -135,7 +135,7 @@ The table below shows, in order, the methods and properties inside the workspace
           </tr>
       </thead>
       <tbody>
-      <tr valign="top"><td>id</td><td>string</td><td>"com-chilipeppr-workspace-sample"<br><br>The ID of the widget. You must define this and make it unique.</td></tr><tr valign="top"><td>name</td><td>string</td><td>"Workspace / Sample"</td></tr><tr valign="top"><td>desc</td><td>string</td><td>"A ChiliPeppr Workspace sample."</td></tr><tr valign="top"><td>url</td><td>string</td><td>"http://raw.githubusercontent.com/chilipeppr/workspace-sample/master/auto-generated-workspace.html"</td></tr><tr valign="top"><td>fiddleurl</td><td>string</td><td>"http://ide.c9.io/chilipeppr/workspace-sample"</td></tr><tr valign="top"><td>githuburl</td><td>string</td><td>"http://github.com/chilipeppr/workspace-sample"</td></tr><tr valign="top"><td>testurl</td><td>string</td><td>"http://workspace-sample-chilipeppr.c9users.io/workspace.html"</td></tr><tr valign="top"><td>widgetConsole</td><td>object</td><td>Contains reference to the Console widget object. Hang onto the reference
+      <tr valign="top"><td>id</td><td>string</td><td>"de-wd77-cp-workspace-wd77"<br><br>The ID of the widget. You must define this and make it unique.</td></tr><tr valign="top"><td>name</td><td>string</td><td>"WD77 Workspace"</td></tr><tr valign="top"><td>desc</td><td>string</td><td>"The  WD77 lean Workspace, optimized for smaller screens."</td></tr><tr valign="top"><td>url</td><td>string</td><td>"http://raw.githubusercontent.com/wd77/cp-workspace-wd77/master/auto-generated-workspace.html"</td></tr><tr valign="top"><td>fiddleurl</td><td>string</td><td>"http://ide.c9.io/wd77/cp-workspace-wd77"</td></tr><tr valign="top"><td>githuburl</td><td>string</td><td>"http://github.com/wd77/cp-workspace-wd77"</td></tr><tr valign="top"><td>testurl</td><td>string</td><td>"http://cp-workspace-wd77-wd77.c9users.io/workspace.html"</td></tr><tr valign="top"><td>widgetConsole</td><td>object</td><td>Contains reference to the Console widget object. Hang onto the reference
 so we can resize it when the window resizes because we want it to manually
 resize to fill the height of the browser so it looks clean.</td></tr><tr valign="top"><td>widgetSpjs</td><td>object</td><td>Contains reference to the Serial Port JSON Server object.</td></tr><tr valign="top"><td>init</td><td>function</td><td>function () <br><br>The workspace's init method. It loads the all the widgets contained in the workspace
 and inits them.</td></tr><tr valign="top"><td>getBillboard</td><td>function</td><td>function () <br><br>Returns the billboard HTML, CSS, and Javascript for this Workspace. The billboard
